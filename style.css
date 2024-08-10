@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#navbar{
+    width: 100%;
+    height: 120px;
+    margin-top: -20px;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 45px;
+    
+    justify-content:space-between ;
+    position: fixed;
+    z-index: 999;
+    
+}
+#nav-l{
+    
+    margin-left: 30px;
+    width: 150px;
+    background-image: url(./images/logo_gokagn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    
+    
+    
+}
+#nav-l:hover{
+   
+    
+    width: 150px;
+    background-image: url(./images/logo_gokagn-hover.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    scale: 1.4;
+}
+
+#nav-r{
+    padding-top: 40px;
+    padding-right: 90px;
+    display:flex ;
+    gap: 80px;
+    font-family: gilroy;
+}
+    
+#nav-r a{
+    text-decoration: none;
+    color: rgba(240, 255, 255, 0.692);
+    display: flex;
+}
+#nav-r a:hover{
+    
+    color: rgb(240, 255, 255);
+    
+}
+#hand{
+    margin-top: -20px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url(./images/hand-png.png);
+    background-size: contain;
+    
+}
+#hand:hover{
+    animation-name: hand;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}   
+@keyframes hand{
+    0%{
+        transform-origin: bottom;
+        rotate: 0deg;
+    }
+    
+    50%{
+        transform-origin: bottom;
+        rotate: 35deg;
+    }
+    
+    100%{
+        transform-origin: bottom;
+        rotate: -35deg;
+    }
+} 
+
+#page-1{
+    height: 100%;
+   overflow: hidden;
+    
+}
+#video{
+    margin-top: -50px;
+    width: 100%;
+    
+}
+#content{
+margin-top: -310px;
+margin-left: 100px;
+display: flex;
+flex-direction: column;
+
+}
+
+#c-up h1{
+    font-size: 70px;
+    font-family: gilroy;
+    font-weight: 400;
+    color: azure;
+    letter-spacing: 5px;
+   
+}
+#c-up h1:nth-child(2){
+    padding-left: 60px;
+}
+#c-up h1 span{
+    
+    color: rgba(240, 255, 255, 0.479);
+    
+}
+
+#page-2{
+    height: 100%;
+    width: 100%;
+    background-color: #f12c25e3;
+    
+    
+}
+#content-2{
+    display: flex;
+}
+#page-2 p{
+    line-height: 50px;
+    font-size: 20px;
+    color: aliceblue;
+    padding-top: 200px;
+    padding-left: 100px;
+    font-family: gilroy;
+    letter-spacing: 4px;
+}
+#cr{
+    margin-top: 320px;
+    margin-left: -250px;
+}
+#cr h1{
+    line-height: 100px;
+    font-size: 70px;
+    font-family: gilroy;
+    font-weight: 400;
+    color: rgb(73, 75, 75);
+    letter-spacing: 5px;
+    opacity: 20%;
+    letter-spacing: 15px;
+}
+#cr h1:nth-child(2){
+    padding-left: 50px;
+}
+
+#line1{
+    width: 1300px;
+    height: 3px;
+    background-color: aliceblue;
+    display: flex;
+    
+    margin-left: 100px;
+}
+#about2{
+    display: flex;
+    padding-top: 50px;
+    margin-left: 1200px;
+    align-items: center;
+    
+}
+
+
+#about2 a{
+    font-size: 20px;
+    font-family: gilroy;
+    text-decoration: none;
+    color: black;
+    padding: 0px 20px;
+    letter-spacing: 2px;
+    z-index: 9999;
+    
+}
+#abc::before{
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    
+    border-radius: 50%;
+    background-color: coral;
+    z-index: -1;
+}
+#abc:hover::before{
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    
+    border-radius: 50%;
+    background-color:coral;
+    animation-name: circle;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes circle {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 340%;
+        scale: 1.5;
+    }
+}
+
+#page-3{
+    
+    width: 100%;
+    background-color: #0C0C0C;
+    display: flex;
+    padding-bottom: 100px;
+}
+#p3-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+#p3-left h1{
+    width: 40%;
+    color: azure;
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: 300;
+    padding:60px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: 100px;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+#prj-icon{
+    border-radius: 50%;
+    font-weight: 300;
+    border: 1px solid white;
+    
+}
+#prj-icon:hover{
+    background-color: red;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+    
+}
+
+#prj-icon i{
+    border-radius: 50%;
+    padding: 10px;
+    font-weight: 300;
+    border: 1px solid white;
+    font-size: 10px;
+}
+
+#l-gallery{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+}
+#ltop{
+    height: 500px;
+    width: 420px;
+    background-image: url(./images/ltop.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#ltop h2{
+    position: absolute;
+    margin-top: 500px;
+    color:white ;
+    font-family: gilroy;
+    font-weight: 200;
+}
+#lbtm h2{
+    position: absolute;
+    margin-top: 500px;
+    color:white ;
+    font-family: gilroy;
+    font-weight: 200;
+}
+#lbtm{
+    height: 500px;
+    width: 420px;
+    background-image: url(./images/lbtm.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#r-gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    margin-top: 400px;
+    padding-left: 100px;
+}
+#rtop{
+    height: 500px;
+    width: 420px;
+    background-image: url(./images/rtop.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#rbtm{
+    height: 500px;
+    width: 420px;
+    background-image: url(./images/rbtm.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#rtop h2{
+    position: absolute;
+    margin-top: 500px;
+    color:white ;
+    font-family: gilroy;
+    font-weight: 200;
+}
+#rbtm h2{
+    position: absolute;
+    margin-top: 500px;
+    color:white ;
+    font-family: gilroy;
+    font-weight: 200;
+}
+#rtop:hover{
+    scale: 1.1;
+}
+#ltop:hover{
+    scale: 1.1;
+}
+#lbtm:hover{
+    scale: 1.1;
+}
+#rbtm:hover{
+    scale: 1.1;
+}
+#rtop h2:hover{
+    color: red;
+}
+#ltop h2:hover{
+    color: red;
+}
+#lbtm h2:hover{
+    color: red;
+}
+#rbtm h2:hover{
+    color: red;
+}
+
+#page-4{
+    
+    background-color: #0C0C0C;
+    overflow: hidden;
+    height: 100%;
+    
+}
+#p4img{
+    display: flex;
+    gap: 250px;
+    animation-name: scrolltext;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#page-4 img{
+    
+    padding-top: 150px;
+    display: flex;
+    height: 700px;
+ 
+}
+@keyframes scrolltext {
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1000px;
+    }
+}
+
+#p4-circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -300px;
+    position: absolute;
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+#p4-circle h1{
+    font-size: 25px;
+    font-family: gilroy;
+    font-weight: 400;
+    word-spacing: 10px;
+    color: aliceblue;
+    
+}
+#p4-circle:hover{
+    scale: 1.4;
+}
+#page-5{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    background-color: #0C0C0C;
+}
+#p5-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20%;
+}
+#circle5::before{
+    content: '';
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    
+    border-radius: 50%;
+    background-color:red;
+    z-index: -1;
+}
+#circle5:hover::before{
+    content: '';
+    display: inline-block;
+    
+    
+    border-radius: 50%;
+    background-color:rgb(250, 10, 10);
+    animation-name: circle5;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle5 {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 450%;
+        
+    }
+}
+#p5-h1{
+    color: rgb(252, 5, 5);
+    font-size: 30px;
+    font-family: gilroy;
+    letter-spacing: 5px;
+}
+#p5-h1 span{
+    z-index: 99999;
+    color: aliceblue;
+}
+
+#p5-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: -200px;
+}
+#p5-right p{
+    color: rgb(248, 245, 245);
+    text-align:left;
+    width: 400px;
+    font-family: gilroy;
+    font-size: 20px;
+}
+
+#page-6{
+    width: 100%;
+    background-color: #0C0C0C;
+}
+#btmnav{
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: rgb(8, 8, 8);
+    padding: 70px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.623);
+}
+
+#nav-btm{
+    padding-top: 40px;
+    padding-right: 90px;
+    display:flex ;
+    gap: 40px;
+    font-family: gilroy;
+}
+    
+#nav-btm a{
+    text-decoration: none;
+    color: rgba(240, 255, 255, 0.692);
+    display: flex;
+    font-size: 15px;
+}
+#nav-btm a:hover{
+    
+    color: rgb(240, 255, 255);
+    
+}
+#hand{
+    margin-top: -20px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    background-image: url(./images/hand-png.png);
+    background-size: contain;
+    
+}
+#hand:hover{
+    animation-name: hand;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#socials{
+    display: flex;
+    gap: 20px;
+}
+#socials i{
+    color: aliceblue;
+    display: flex;
+    
+    justify-content: center;
+    padding-top: 6px;
+}
+#socials i:hover{
+    color: rgb(10, 10, 10);
+    
+}
+
+#icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#icon:hover{
+    background-color: aliceblue;
+}
+#copyright{
+    color: aliceblue;
+    margin-left: 100px;
+    text-align: center;
+    font-family: gilroy;
+    font-size: 20px;
+    line-height: 40px;
+}
+#copyright span{
+    
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.resp{
+    display: none;
+}
+@media (max-width: 1300px) {
+    .resp{
+        display: block;
+        font-family: "Nunito", sans-serif;
+        background-color: #0C0C0C;
+        color: azure;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        display: none;
+    }
+}
